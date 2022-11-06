@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaXamarin.TabbedPage1">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Inicio" Padding="20">
+        <StackLayout>
+            <Label Text="Bienvenidos a mi App" FontAttributes="Bold" TextColor="DarkBlue"></Label>
+            <Label Text="Puedes visualizar el contenido desde las pestañas de la parte superior"></Label>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Portal">
+        <WebView Source="https://www.senati.edu.pe/"/>
+    </ContentPage>
+    <ContentPage Title="ABOUT US">
+        <StackLayout>
+            <Label Text="Hecho por: Henry Juarez" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

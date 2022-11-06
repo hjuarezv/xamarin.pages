@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaXamarin.FlyoutPage1"
+             xmlns:pages="clr-namespace:HolaXamarin">
+  <FlyoutPage.Flyout>
+        <ContentPage Title="MENU">
+            <StackLayout Padding="30">
+                <Label Text="App Prueba" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="LightGreen" Padding="0, 0, 0, 30"/>
+                <Button Text="Calcular" />
+                <Button Text="Guardar" />
+                <Button Text="Recuperar" />
+                <Button Text="Salir" />
+            </StackLayout>
+        </ContentPage>
+  </FlyoutPage.Flyout>
+  <FlyoutPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <pages:FlyoutPage1Detail />
+      </x:Arguments>
+    </NavigationPage>
+  </FlyoutPage.Detail>
+</FlyoutPage>
